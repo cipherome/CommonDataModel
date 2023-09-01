@@ -464,6 +464,7 @@ CREATE TABLE @cdmDatabaseSchema.CONCEPT_ANCESTOR (
 
 --HINT DISTRIBUTE ON RANDOM
 CREATE TABLE @cdmDatabaseSchema.SOURCE_TO_CONCEPT_MAP (
+			id varchar(50) NOT NULL,
 			source_code varchar(50) NOT NULL,
 			source_concept_id integer NOT NULL,
 			source_vocabulary_id varchar(20) NOT NULL,
